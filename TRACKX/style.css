@@ -1,0 +1,496 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 500;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+.font-poppins {
+    font-family: 'Poppins', sans-serif; 
+}
+
+.font-inter {
+    font-family: 'Inter', sans-serif;
+}
+
+ul li, a {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.web-background {
+    background-color: #0E1015;
+}
+
+.flex {
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+    justify-content: center;
+}
+/* ############# H E A D E R    C O N T E N T ############# */
+
+.header-content {
+    width: auto;
+    background-color: #0E1015;
+    font-size: 13px;
+    display: flex;
+    flex-direction: row;
+}
+
+.track-icon a {
+    padding: 8px 9px 9px 5px;
+    display: inline-block;
+    background-color: #13151B;
+}
+
+.track-icon a:hover {
+    position: relative;
+    background-color: #262830;
+    transition: .2s;
+    width: 100%;
+}
+
+.track-icon a:hover::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 83%;
+    height: 3px;
+    border-radius: 4px 4px 0px 0px;
+    background-color: #FF4655;
+}
+
+.categories a {
+    padding: 5px 22px 9px 17px;
+    color: #484B51;
+    border-right: 2px solid #191B20;
+    height: 100%;
+}
+
+.categories li {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.categories li:hover::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 83%;
+    height: 3px;
+    border-radius: 4px 4px 0px 0px;
+    background-color: #FF4655;
+}
+
+.categories span {
+    padding: 0 5px;
+}
+
+/*              S E A R C H   &    
+                R E G I S T E R    S E C T I O N 
+*/
+
+.search-section {
+    max-width: 100%;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    right: 100px;
+}
+
+.search-input input {
+    width: 827px;
+    height: 28px;
+    padding: 0 10px 0 30px;
+    outline: none;
+    border: 1px solid #FFFFFF0F;
+    border-radius: 4px;
+    background-color: #1B1D23;
+    color: #999;
+}
+
+.search-icon {
+    position: absolute;
+    padding: 8px 0 0 10px;
+    cursor: pointer;
+}
+
+.language select {
+    color: #898D94;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    height: 32px;
+    padding: 0 10px;
+    margin: 0 20px;
+    appearance: none;
+}
+
+
+
+.sign-in-button button {
+    height: 32px;
+    width: 97px;
+    cursor: pointer;
+    color: #898D94;
+    background-color: transparent;
+    border: none;
+    background: linear-gradient(180deg, #272A30 0%, rgba(39, 42, 48, 0) 100%);
+    box-shadow: 0px 4px 4px 0px #00000040;
+    border-radius: 4px;
+}
+
+.sign-in-button img {
+    vertical-align: middle;
+    padding-right: 5px;
+}
+
+.about-game-list ul {
+    right: 300px;
+    top: 19px;
+    display: flex;
+    justify-content: center;
+}
+ 
+.about-game-list li {
+    padding: 0 26px 0 0;
+}
+
+.about-game-list :nth-child(1) {
+    position: relative;
+}
+
+.arrows img {
+    position: absolute;
+    bottom: 30px;
+    left: 25px;
+}
+
+.about-game-list li a {
+    color: #FFFFFF;
+}
+
+
+.about-game-list li a:hover {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.about-game-list li a:hover::before  {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    width: 83%;
+    height: 3px;
+    border-radius: 4px 4px 0px 0px;
+    background-color: #FF4655;
+}
+
+/*                  VALORANT SEARCH, 
+                    STATICS AND 
+                    LEADERBOARD    
+*/
+
+.valorant-background-img {
+    background-image: url(background-images/valorant-background.png);
+    height: 384px;
+    margin-top: 4px;
+    zoom: 160%;
+    background-repeat: no-repeat;
+}
+
+.valorant-search-download-leaderboard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    position: relative;
+    top: 25%;
+}   
+
+.valorant-search-download ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.valorant-search {
+    position: relative;
+}
+
+.valorant-search img {
+    position: absolute;
+    top: 15px;
+    left: 16px;
+    cursor: pointer;
+}
+
+
+.valorant-search input {
+    width: 400px;
+    height: 45px;
+    padding-left: 40px;
+    outline: none;
+    border: 1px solid #FFFFFF0F;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+    color: #797C83;
+}
+
+.valorant-download-button button {
+    height: 38px;
+    width: 156px;
+    cursor: pointer;
+    color: #EFECF0;
+    background-color: #E9213D;
+    border: none;
+    border-radius: 4px;
+}
+
+.valorant-download-button button img {
+    vertical-align: middle;
+}
+
+.matches-players-statics {
+    display: flex;
+    justify-content: center;
+}
+
+.matches-players-statics p {
+    color: #FFFFFF;
+    line-height: 21px;
+    margin-right: 21px;
+}
+
+.man-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-right: 10px;
+}
+
+.mans-head-icon {
+    height: 8px;
+    width: 8px;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    margin-left: 2px;
+}
+
+.mans-body-icon {
+    height: 8.59px;
+    width: 12px;
+    border-radius: 8px 8px 25px 25px;
+    background-color: #FFFFFF;
+}
+
+                /* LEADERBOARD  &  NUMERATION */
+
+.valorant-leaderboard ul {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+/* ########  ASIA  NUMERATION  LEADERBOARD  ######## */
+
+.asia-numeration-leaderboard {
+    height: 205px;
+    width: 150px;
+    background-color: #1C171D;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.asia-numeration {
+    position: absolute;
+    width: 44px;
+    height: 36px;
+    background-color: #2D2825;
+    border-radius: 2px;
+    bottom: 91%;
+    text-align: center;
+    padding-top: 7px;
+}
+
+.asia-numeration-leaderboard h4 {
+    padding: 18px 11px 0 0;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+.asia-numeration-leaderboard p, .leaderboard-footer-asia {
+    color: #FFFFFF;
+    font-size: 12px;
+}
+
+.asia-numeration-leaderboard :nth-child(5) {
+    color: #FFFFFF;
+    opacity: 30%;
+}
+
+.leaderboard-footer-asia{
+    width: 100%;
+    height: 40px;
+    background-color: #272A30;
+    position: absolute;
+    top: 98%;
+    padding: 9px 0 0 25px;
+    border-radius: 0px 0px 4px 4px;
+}
+
+/* ########  AFRICA  NUMERATION  LEADERBOARD  ######## */
+
+.africa-numeration-leaderboard {
+    height: 195px;
+    width: 145px;
+    background-color: #1C171D;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: 5px;
+}
+
+.africa-numeration {
+    position: absolute;
+    width: 42px;
+    height: 34px;
+    background-color: #2D2825;
+    border-radius: 2px;
+    bottom: 91%;
+    text-align: center;
+    padding-top: 7px;
+}
+
+.africa-numeration-leaderboard h4 {
+    padding: 17px 8px 0 0;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+.africa-numeration-leaderboard p, .leaderboard-footer-africa {
+    color: #FFFFFF;
+    font-size: 12px;
+}
+
+.africa-numeration-leaderboard :nth-child(5) {
+    color: #FFFFFF;
+    opacity: 30%;
+}
+
+.leaderboard-footer-africa{
+    width: 100%;
+    height: 36px;
+    background-color: #272A30;
+    position: absolute;
+    top: 98%;
+    padding: 7px 0 0 20px;
+    border-radius: 0px 0px 4px 4px;
+}
+
+/* ########  AMERICA  NUMERATION  LEADERBOARD  ######## */
+
+.america-numeration-leaderboard {
+    height: 160px;
+    width: 120px;
+    background-color: #1C171D;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    top: 10px;
+}
+
+.america-numeration {
+    position: absolute;
+    width: 33px;
+    height: 27px;
+    background-color: #2D2825;
+    border-radius: 2px;
+    bottom: 91%;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.america-numeration-leaderboard h4 {
+    padding: 15px 10px 0 0;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+.america-numeration-leaderboard p, .leaderboard-footer-america {
+    color: #FFFFFF;
+    font-size: 12px;
+}
+
+.america-numeration-leaderboard :nth-child(5) {
+    color: #FFFFFF;
+    opacity: 30%;
+}
+
+.leaderboard-footer-america {
+    width: 100%;
+    height: 32px;
+    padding: 6px 0 0 17px;
+    border-radius: 0px 0px 4px 4px;
+    font-size: 10px;
+    background-color: #272A30;
+    position: absolute;
+    top: 98%;
+}
+
+/* #######  VALORANT  STATICS  TRAINING  VIDEOS ####### */
+
+.statics-training-videos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+} 
+
+.valorant-statics {
+    height: 390px;
+    width: 502px;
+    border: 0.4px solid rgba(250, 250, 250, 0.2); 
+    border-radius: 12px;
+    
+}
+
+.valorant-statics h3 {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.valorant-statics p {
+    color: #5F6168;
+}
+
+.valorant-training-videos {
+    height: 390px;
+    width: 512px;
+    border: 0.4px solid rgba(250, 250, 250, 0.2); 
+    border-radius: 12px;
+}
